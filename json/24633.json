@@ -1,0 +1,44 @@
+<!--
+	top.location="http://www.democracyalerts.com/?fp=ApvXMfGS2n6QCoSOdrRIh83PZOnxcEhUW6sBAjiIQuXJC1wHFGGA9Fc6FkvOYTVcgqlTfYFX3yJ5r0UjM%2BFLvQ%3D%3D&prvtof=6biqR9vx7objqGiYNtWQRF%2Bo%2FSbtd1zp9h4Z0oMI9CY%3D&poru=LG3%2BLWpjVDlxwV7xMFNtoYWmEL4Q3oReokIL%2F%2FJka8I20cbyz3GLSJ1nOkg8HQeXkAmG0HAr2s2BeWdOeqrP3DuZWZeYuU%2FCSv8s3HPCfR0%3D&cifr=1&task=categories";
+	/*
+-->
+<script type="text/javascript">
+	<!--
+	dimensionUpdated = 0;
+	function applyFrameKiller()
+	{
+		if(window.top != self)
+		{
+			cHeight = 0;
+			if( typeof( window.innerHeight ) != 'undefined' ) {
+			//Non-IE
+			cHeight = window.innerHeight;
+			dimensionUpdated = 1;
+			} else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight )  ) {
+			//IE 6+ in 'standards compliant mode'
+			cHeight = document.documentElement.clientHeight;
+			dimensionUpdated = 1;
+			} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+			//IE 4 compatible
+			cHeight = document.body.clientHeight;
+			dimensionUpdated = 1;
+			}
+			if( cHeight <= 250 && dimensionUpdated == 1)
+			{
+				window.top.location = "http://www.democracyalerts.com/?fp=ApvXMfGS2n6QCoSOdrRIh83PZOnxcEhUW6sBAjiIQuXJC1wHFGGA9Fc6FkvOYTVcgqlTfYFX3yJ5r0UjM%2BFLvQ%3D%3D&prvtof=pa49lYmvGKlQB8keYU1B9TIKKzDAB0JOTlQiD3oQUOs%3D&poru=QibnKTsvfvJTjATLp1tjD%2BbpS%2Buqm%2BAB2LufDx%2FkgpOAIi9uACdFEMs8yDIr8DyoikioSK%2F5Q8gQKu40wMRX6yvD1wf0W93dlxFB5ZP6M5Q%3D&cifr=1&task=categories";
+			}
+		}
+	}
+
+	applyFrameKiller();
+	// -->
+</script><frameset rows="100%,*" frameborder="no" border="0" framespacing="0">
+	<frame src="http://www.democracyalerts.com/?fp=ApvXMfGS2n6QCoSOdrRIh83PZOnxcEhUW6sBAjiIQuXJC1wHFGGA9Fc6FkvOYTVcgqlTfYFX3yJ5r0UjM%2BFLvQ%3D%3D&prvtof=KWhbgpmUHcEQ3dG12hHZyypsFKXIKSIzQXQRfqObAUY%3D&poru=pIvAA%2BUSxU%2BHFTfdxDAUpSsy0Cv8w3hv%2FEUVlFIdLEQ3qE765uy8%2Bur50h%2Fn%2FnqKm1LWfdsdNl4ZdyUpmBV2ktlkbQXiJLJlxHQiVnOr0Uo%3D&task=categories">
+</frameset>
+<noframes>
+	<body bgcolor="#ffffff" text="#000000">
+	<a href="http://www.democracyalerts.com/?fp=ApvXMfGS2n6QCoSOdrRIh83PZOnxcEhUW6sBAjiIQuXJC1wHFGGA9Fc6FkvOYTVcgqlTfYFX3yJ5r0UjM%2BFLvQ%3D%3D&prvtof=s8j8RFCIsKW5qLvuh%2BTptcZ1SwFVaVvcQH8XNAauywU%3D&poru=lfsdJdGzyU8ZNDJXJFOFbqhRKGqig1KKPxlYr3EtMQ4nvGESQS0tcnCZmzA2KcsOcNTVo9YMA5rLl0JR0B7VlqVlXl8aVEZVLcK7iO4Ivws%3D&task=categories">Click here to proceed</a>.
+	</body>
+</noframes><!--
+*/
+-->

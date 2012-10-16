@@ -1,0 +1,1071 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<!--
+
+Natuurijs uses HeatMap Theme 2.5.4 (http://heatmaptheme.com)
+
+by Stuart Wider (http://stuartwider.com) copyright 2010
+
+-->
+
+
+
+<!-- 
+
+header.php
+
+~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ -->
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="nl">
+
+<head profile="http://gmpg.org/xfn/11">
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="distribution" content="global" />
+
+
+
+<meta name="robots" content="index,follow" />
+
+
+<meta name="language" content="en" />
+
+
+
+<!-- 
+
+Meta Description and KeyWords for Home Page
+
+~~~ -->
+
+
+
+
+
+
+<!-- 
+
+Meta Description and KeyWords for a Post or a Page
+
+~~~ -->
+
+
+
+
+
+
+<!-- 
+
+HTML Title
+
+~~~ -->
+
+
+
+<title>Waar kan ik schaatsen? - Natuurijs</title>
+
+
+
+<!--
+
+Favicon
+
+~~~ -->
+
+
+
+<link rel="Shortcut Icon" href="http://www.ekkel.com/wp-content/themes/heatmap-adsense-theme/images/favicon.ico" type="image/x-icon" />
+
+
+
+<!--
+
+Stylesheet
+
+~~~ -->
+
+
+
+
+
+
+<link rel="stylesheet" href="http://www.ekkel.com/wp-content/themes/heatmap-adsense-theme/style.css" type="text/css" media="screen" />
+
+
+
+
+	<link rel="stylesheet" href="http://www.ekkel.com/wp-content/themes/heatmap-adsense-theme/default.css" type="text/css" media="screen" />
+
+
+
+
+
+
+<!--
+
+RSS Feeds
+
+~~~ -->
+
+
+
+<link rel="alternate" type="application/rss+xml" title="Natuurijs RSS Feed" href="http://www.ekkel.com/?feed=rss2" />
+
+<link rel="alternate" type="application/atom+xml" title="Natuurijs Atom Feed" href="http://www.ekkel.com/?feed=atom" />
+
+
+
+<!--
+
+Pingback URL
+
+~~~ -->
+
+
+
+<link rel="pingback" href="http://www.ekkel.com/xmlrpc.php" />
+
+
+
+
+
+<!--
+
+Javascript for the Suckerfish Menu plugin
+
+~~~ -->
+
+
+
+
+
+
+<!--
+
+Additional Head Scripts
+
+~~~ -->
+
+
+
+
+
+
+<!--
+
+wp_head()
+
+~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ -->
+
+
+
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.ekkel.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.ekkel.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Natuurijs' href='http://www.ekkel.com' />
+<link rel='up' title='Blog' href='http://www.ekkel.com/?page_id=54' />
+<link rel='prev' title='Blog' href='http://www.ekkel.com/?page_id=54' />
+<link rel='next' title='Natuurijsbanen' href='http://www.ekkel.com/?page_id=162' />
+<meta name="generator" content="WordPress 3.0.1" />
+<link rel='canonical' href='http://www.ekkel.com/' />
+
+
+
+<!--
+
+End of wp_head()
+
+~~~ -->
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+<!--
+
+Find out if this theme has the preset mode deactivated. If its not deactivated then lets show off a bit. Party time!
+
+~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ -->
+
+
+
+	
+
+
+<!--
+
+The High Bar
+
+~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ -->
+
+
+
+	<div id="high-bar">
+
+	
+
+		
+		
+
+		
+		
+
+		<!-- widget_text --><div id="text-15" class="widget widget_text">			<div class="textwidget"><!-- BEGIN STANDARD TAG - 728 x 90 - ROS: Run-of-site - DO NOT MODIFY -->
+<SCRIPT TYPE="text/javascript" SRC="http://ad.bannerconnect.net/st?ad_type=ad&ad_size=728x90&section=776445"></SCRIPT>
+<!-- END TAG --></div>
+		</div>
+		
+
+	</div> <!-- id="high-bar" -->
+
+		
+
+	<div class="clearFloat"></div>
+
+ 
+
+    <div id="main">
+
+	
+
+<!--
+
+The Header Bar
+
+~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ -->
+
+
+
+        <div id="header-bar">
+
+		
+
+<!--
+
+The Logo
+
+~~~ -->
+
+        	
+
+			
+					
+
+<!--
+
+The Name of the Blog and the Tagline
+
+~~~ -->
+
+			
+
+			
+				<div id="header-bar-content">
+
+					<div class="blog-title"><a href="http://www.ekkel.com/">Natuurijs</a></div>
+
+					<div class="blog-tagline"><a href="http://www.ekkel.com/">Waar kan ik schaatsen?</a></div>
+
+				</div> <!-- id="header-bar-content" -->
+
+				
+            
+
+<!--
+
+Widget Area: Header Right
+
+~~~ -->
+
+			
+
+            <div id="header-bar-right">
+
+				
+
+				
+				
+
+				
+				
+
+				<!-- widget_text --><div id="text-12" class="widget widget_text">			<div class="textwidget"><html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title></title>
+</head>
+<body>
+<a
+ href="http://www.youw8.com/nl/node/489&amp;aid=10012&amp;label=schaatskaart1011"><img
+ style="border: 0px solid ; width: 467px; height: 59px;" alt=""
+ src="http://www.ekkel.com/backup/flash/png-banner.png"></a>
+</body>
+</html></div>
+		</div>
+					
+
+            </div> <!-- id="header-bar-right" -->
+
+			
+
+        </div> <!-- id="header-bar" -->
+
+        
+
+        <div class="clearFloat"></div>
+
+        
+
+<!--
+
+The Nav Bar
+
+~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ -->
+
+
+
+        <div id="nav-bar">
+
+        	
+
+				
+
+				<div id="nav-bar-content">
+
+					<ul>
+
+					<li><a href="http://www.ekkel.com">Schaatskaart</a></li>
+
+					
+					<li class="page_item page-item-217"><a href="http://www.ekkel.com/?page_id=217" title="Elfstedenijs">Elfstedenijs</a></li>
+<li class="page_item page-item-162"><a href="http://www.ekkel.com/?page_id=162" title="Natuurijsbanen">Natuurijsbanen</a></li>
+<li class="page_item page-item-6"><a href="http://www.ekkel.com/?page_id=6" title="Kunstijsbanen">Kunstijsbanen</a></li>
+<li class="page_item page-item-54 current_page_ancestor current_page_parent"><a href="http://www.ekkel.com/?page_id=54" title="Blog">Blog</a></li>
+
+					</ul>
+
+				</div> <!-- id="nav-bar-content" -->
+
+			
+        
+
+        </div> <!-- id="nav-bar" -->
+
+		
+
+<!--
+
+The Search Bar
+
+~~~ -->
+
+        
+
+		<div id="search-bar">
+
+		
+
+			<div id="search-bar-content">
+
+				<form method="get" id="searchform" action="http://www.ekkel.com"><input type="text" value="" name="s" id="s" size="20" />
+
+				<input type="submit" id="searchsubmit" value="Search" />
+
+				</form>
+			</div> <!-- id="search-bar-content" -->
+
+
+
+		</div> <!-- id="search-bar" -->
+
+		
+
+        <div class="clearFloat"></div>
+
+
+
+<!--
+
+The Categories Bar
+
+~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ -->
+
+ 
+
+        <div id="cat-bar">
+
+        	
+
+				
+
+				<div id="cat-bar-content">
+
+					<ul>
+
+						<li class="cat-item cat-item-7"><a href="http://www.ekkel.com/?cat=7" title="Alle berichten opgeslagen onder Help bekijken">Help</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://www.ekkel.com/?cat=3" title="Alle berichten opgeslagen onder Nieuws bekijken">Nieuws</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://www.ekkel.com/?cat=9" title="Alle berichten opgeslagen onder video bekijken">video</a>
+</li>
+
+					</ul>
+
+				</div> <!-- id="cat-bar-content" -->
+
+			
+        
+
+        </div> <!-- id="cat-bar" -->
+
+  
+
+<!--
+
+The RSS Bar (inc Feedburner)
+
+~~~ -->    
+
+        <div id="rss-bar">
+
+        
+
+        	<div id="rss-bar-content">
+
+<!--
+
+Feedburner Email Link
+
+~~~ --> 	
+
+				
+			
+
+				
+				
+
+
+
+<!--
+
+RSS Comments Link
+
+~~~ -->	
+
+				<div class="rss-comments">
+
+				
+
+					
+						<a href="http://www.ekkel.com/?feed=comments-rss2">Comments</a>
+
+					
+	
+
+				</div> <!-- class="rss-comments" -->
+
+
+
+<!--
+
+RSS Posts Link
+
+~~~ -->
+
+				<div class="rss-posts">
+
+				
+
+					
+						<a href="http://www.ekkel.com/?feed=rss2">Posts</a>
+
+					
+	
+
+				</div> <!-- class="rss-posts" -->
+
+				
+
+            </div> <!-- id="rss-bar-content" -->
+
+
+
+        </div> <!-- id="rss-bar" -->
+
+        
+
+        <div class="clearFloat"></div>
+
+				
+
+		
+		
+
+<!--
+
+End of header.php
+
+~~~ -->
+
+
+
+
+<!--
+
+page.php
+
+~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ -->
+
+
+
+<!--
+
+Content of the page (inc comments and post details)
+
+~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ -->
+
+
+
+<div id="page-body-wrapper">
+
+	
+
+	<div id="content">
+
+		
+
+		
+
+	
+
+<!--
+
+The Post
+
+~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ -->
+
+	
+
+		<div class="post-content">
+
+	
+
+<!--
+
+Widget Area: [All Content] Above
+
+~~~ -->
+
+			
+	
+
+<!--
+
+The Post Title 
+
+~~~ -->				
+
+			<h1 class="h1-underline">Schaatskaart</h1>
+
+<!--
+
+Widget Area: [Content Item] Above
+
+~~~ -->			
+
+			 
+
+<!--
+
+Widget Area: [Content Item] Left 
+
+~~~ -->	
+
+			
+<!--
+
+Widget Area: [Content Item] Right
+
+~~~ -->
+
+			
+<!--
+
+The content itself 
+
+~~~ -->
+
+			
+
+
+			<p><strong>Update 10-10-2012</strong> Testen met nieuwe map technologie.</p>
+<p><iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;q=https:%2F%2Fdocs.google.com%2Fspreadsheet%2Fpub%3Fkey%3DtFPCX1D8yDt7Vj1kphvLJuA%26single%3Dtrue%26gid%3D0%26output%3Dtxt%26time1%3D4119755&amp;ie=UTF8&amp;t=m&amp;ll=52.536273,5.339355&amp;spn=1.603845,3.510132&amp;z=8&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;q=https:%2F%2Fdocs.google.com%2Fspreadsheet%2Fpub%3Fkey%3DtFPCX1D8yDt7Vj1kphvLJuA%26single%3Dtrue%26gid%3D0%26output%3Dtxt%26time1%3D4119755&amp;ie=UTF8&amp;t=m&amp;ll=52.536273,5.339355&amp;spn=1.603845,3.510132&amp;z=8&amp;source=embed" style="color:#0000FF;text-align:left">Bekijk grote kaart</a></small></p>
+<p>groen = natuurijs,  rood = niet betrouwbaar</p>
+<p>Heb je geen Google account dan kun je via onderstaand formulier een punt doorgeven of wijzigen. Wel zo volledig mogelijk invullen en voorzien van je e-mail adres (anders wordt het punt niet geplaatst):</p>
+<p><iframe src="https://spreadsheets.google.com/embeddedform?key=0AqV4-jVGuCmadDNYXzhGVmNhSzhfbUxzM290ZG9UckE" width="640" height="1400" frameborder="0" marginheight="0" marginwidth="0">Wordt geladen&#8230;</iframe></p>
+
+				
+
+<!--
+
+Pagination for Multi-page posts
+
+~~~ -->
+
+			
+	
+
+<!--
+
+Widget Area: [Content Item] Below 
+
+~~~ -->
+
+			
+	
+
+		</div> <!-- class="post-content" -->
+
+	
+
+		<div class="clearFloat"></div>
+
+	
+
+<!--
+
+Post Details 
+
+~~~ -->
+
+		<div class="post-details">
+
+		
+
+			<p class="comment-button-box">
+
+		
+
+				
+
+			
+
+			Posted by
+
+				admin
+				
+				 - 
+
+				10 november 2010 at 20:12
+			</p>
+
+		
+
+			
+		
+
+			<p>
+
+				
+			</p>
+
+	
+
+		</div> <!-- class="post-details" -->
+
+	
+
+		<!--
+
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://www.ekkel.com/"
+    dc:identifier="http://www.ekkel.com/"
+    dc:title="Schaatskaart"
+    trackback:ping="http://www.ekkel.com/wp-trackback.php?p=88" />
+</rdf:RDF>
+		-->
+
+	
+
+		
+	
+
+<!--
+
+The comments
+
+~~~ -->
+
+	
+
+		
+		
+
+<!--
+
+Widget Area: [All Content] Below
+
+~~~ -->
+
+		
+		
+
+	</div> <!-- id="content" -->
+
+	
+
+	
+
+
+<!-- 
+
+sidebar.php
+
+~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ -->
+
+
+
+
+<!-- 
+
+top-widebar
+
+~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ -->
+
+	
+
+	<div id="sidebar-wrapper">
+
+	
+
+		<div id="top-widebar">
+
+			
+
+			<ul>
+
+			<!-- widget_text --><li id="text-5" class="widget widget_text"><h4 class="widgettitle">Het begint er weer op te lijken !</h4>			<div class="textwidget"><html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>intro</title>
+</head>
+<body>
+<span style="font-style: italic;"><img
+ style="border: 5px solid #FFFFFF; width: 150px; height: 147px; float: left;"
+ alt="" src="http://www.ekkel.com/backup/flash/erik-foto.png"
+ hspace="20" vspace="10"></span>De Schaatskaart
+van Nederland is weer in de lucht. Gemaakt voor en door de echte
+schaats- liefhebbers. Als je zelf toevoegt via je eigen Google Account dan graag even de juiste kleur
+gebruiken.
+Natuurlijk alleen locaties waar echt gereden wordt. Graag ook voorzien van datum en actuele informatie. Alleen bijdragen met e-mail adres worden geplaatst.<br>
+<br>
+Veel schaatsplezier !!<span style="font-style: italic;">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Erik Ekkel -
+<a href="mailto:info@ekkel.com">info@ekkel.com</a><br>
+<br>
+</span><span style="font-weight: bold;">Disclaimer:
+De locaties
+op de kaart zijn geen garantie dat het ijs betrouwbaar is. Controleer
+daarom altijd of het ijs ook echt wel betrouwbaar is.</span>
+</body>
+</html></div>
+		</li>
+			</ul>
+
+		
+
+		</div> <!-- id="top-widebar" -->
+
+	
+
+<!-- 
+
+left sidebar
+
+~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ -->
+
+	
+
+		<div id="left-sidebar">
+
+			
+
+			<ul>				
+
+			<!-- widget_text --><li id="text-7" class="widget widget_text">			<div class="textwidget"><script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 5,
+  interval: 6000,
+  width: 150,
+  height: 410,
+  theme: {
+    shell: {
+      background: '#3d56a1',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#000000',
+      color: '#ffffff',
+      links: '#0762eb'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('erikekkel').start();
+</script></div>
+		</li>
+			</ul>
+
+		
+
+		</div> <!-- id="left-sidebar" -->
+
+	
+
+<!-- 
+
+right sidebar
+
+~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ -->
+
+	
+
+		<div id="right-sidebar">
+
+			
+
+			<ul>
+
+			<!-- hmt_widget_ad_unit_2 --><li id="hmt-widget-ad-unit-2" class="widget hmt_widget_ad_unit_2"><script type="text/javascript"><!--
+google_ad_client = "pub-8154798380351471";
+/* 120x600, gemaakt 11-11-10 */
+google_ad_slot = "3377160388";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></li>
+			</ul>
+
+			
+
+		</div> <!-- id="right-sidebar" -->
+
+		
+
+<!-- 
+
+bottom widebar
+
+~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ -->
+
+	
+
+		<div id="bottom-widebar">
+
+			
+
+			<ul>
+
+			<!-- widget_text --><li id="text-13" class="widget widget_text"><h4 class="widgettitle">Het weer in Brabant</h4>			<div class="textwidget"><iframe src="http://a.forecabox.com/get/27427" width="300" height="250" marginwidth="0" 
+marginheight="0" frameborder="0" scrolling="no" allowtransparency="true"></iframe></div>
+		</li><!-- widget_rss --><li id="rss-5" class="widget widget_rss"><h4 class="widgettitle"><a class='rsswidget' href='http://news.google.nl/news?pz=1&#038;cf=all&#038;ned=us&#038;hl=en&#038;q=natuurijs&#038;cf=all&#038;output=rss' title='Syndicate deze inhoud (RSS)'><img style='border:0' width='14' height='14' src='http://www.ekkel.com/wp-includes/images/rss.png' alt='RSS' /></a> <a class='rsswidget' href='http://news.google.nl/news?pz=1&amp;ned=us&amp;hl=en&amp;q=natuurijs' title='Google News'>Natuurijs nieuws via Google Nieuws</a></h4><ul><li><a class='rsswidget' href='http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNFcL0uMgpoWjXDoQbAgfuHL8FDsiQ&amp;url=http://www.gooieneemlander.nl/regionaal/gooivechtstreek/article18445703.ece/David-geeft-hamer-door-aan-Peter?lref=sll' title='David geeft hamer door aan PeterDe Gooi- en EemlanderEn natuurlijk komen de gaande en de komende man elkaar weer tegen als er weer eens een Driedaagse van Ankeveen of een Nederlands kampioenschap op natuurijs verreden kan worden. Peter van Bennekom is 64. Hij dreef tot drie jaar terug de bekende ...and more » [&hellip;]'>David geeft hamer door aan Peter - De Gooi- en Eemlander</a> <span class="rss-date">15 oktober 2012</span></li><li><a class='rsswidget' href='http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNHp3t-EpXtV671i2lwr1xw9DPGF6w&amp;url=http://www.rtvdrenthe.nl/nieuws/onderweg-op-ijsbaan-assen' title='RTV DrentheOnderweg op de ijsbaan in AssenRTV Drenthe... scholieren gebruik van de baan in Assen. Ook worden er schaatslessen aangeboden. De natuurijsverenigingen mogen binnenkort gratis de baan op. Daarover praat Steven met Rieks Poelman, voorzitter van de Commissie Natuurijs van de KNSB Drenthe. [&hellip;]'>Onderweg op de ijsbaan in Assen - RTV Drenthe</a> <span class="rss-date">12 oktober 2012</span></li><li><a class='rsswidget' href='http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNHXNFdvMy6nAPwW-UHda03iGMwg0Q&amp;url=http://www.ad.nl/ad/nl/1742/Schaatsen/article/detail/3330125/2012/10/11/Beresterke-Bergsma-ziet-marathons-als-basis-voor-Sotsji.dhtml' title='AD.nl&#039;Beresterke&#039; Bergsma ziet marathons als basis voor SotsjiAD.nlHij won drie marathons in de kunstijscompetitie en werd op speels gemak voor de tweede keer Nederlands kampioen op natuurijs. Maar ook als langebaanschaatser maakte hij indruk met wereldbekerzeges op de 5 en 10 kilometer. © anp. Bergsma is een ... [&hellip;]'>&#039;Beresterke&#039; Bergsma ziet marathons als basis voor Sotsji - AD.nl</a> <span class="rss-date">11 oktober 2012</span></li><li><a class='rsswidget' href='http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNE1EKAHA7FhLL7vclaOkhBl6SSqpw&amp;url=http://www.skatingonline.nl/nauwelijks-reglementswijzigingen-marathon' title='SkatingOnline.nlNauwelijks reglementswijzigingen marathon | 09-10-2012SkatingOnline.nlOp natuurijs is de grootste verandering dat er in Nederland zal worden gereden in het KNSB Natuurijs klassement. De sectie Marathon bepaalt ieder jaar welke marathons hier toe behoren. Deze wedstrijden hebben een beschermde status en staan boven ... [&hellip;]'>Nauwelijks reglementswijzigingen marathon | 09-10-2012 - SkatingOnline.nl</a> <span class="rss-date">9 oktober 2012</span></li><li><a class='rsswidget' href='http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNEPTiuDPTbJago4EE5hvPMyRHrQHA&amp;url=http://www.dichtbij.nl/groot-alkmaar/sport/artikel/2441819/het-schaatsseizoen-is-weer-begonnen.aspx' title='Het Schaatsseizoen is weer begonnen!Dichtbij.nlUit de berichten van afgelopen jaar blijkt dat veel mensen ongetraint en ongeoefend zijn gaan schaatsen op het natuurijs en dat daardoor veel blessures en verwondingen zijn ontstaan. Kom nu op schaatsles bij de Alkmaarsche IJsclub! Schaatslessen voor ... [&hellip;]'>Het Schaatsseizoen is weer begonnen! - Dichtbij.nl</a> <span class="rss-date">5 oktober 2012</span></li><li><a class='rsswidget' href='http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNG_MpeGUyBge2GXxkensNIT_fPH0Q&amp;url=http://www.rtvnoord.nl/?p=114145' title='RTV NoordLammert Huitema gaat met schaatsploeg voor podiumplekRTV NoordRoelof Koops wil zich net als vorig seizoen laten zien op natuurijs. Hij is de enige nieuweling binnen de formatie. De wedstrijden om de Marathon Cup beginnen volgende week zaterdag 13 oktober op de Jaap Eden Baan in Amsterdam. Groningen is één ... [&hellip;]'>Lammert Huitema gaat met schaatsploeg voor podiumplek - RTV Noord</a> <span class="rss-date">5 oktober 2012</span></li><li><a class='rsswidget' href='http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNG4vAESirTnB8ERcJxsKXtgwdXoDA&amp;url=http://www.dichtbij.nl/rijn-en-venen/sport/artikel/2440688/schaatsen-bij-ijsclub-abcoude.aspx' title='Schaatsen bij IJsclub AbcoudeDichtbij.nlMenigeen hoopt net als vorig jaar weer te kunnen schaatsen op natuurijs op de Fortgracht en andere wateren. Om met name kinderen hierop voor te bereiden, kunnen ze vanaf oktober bij de Abcouder IJsclub schaatslessen volgen. Al jaren gaat de Abcouder ... [&hellip;]'>Schaatsen bij IJsclub Abcoude - Dichtbij.nl</a> <span class="rss-date">4 oktober 2012</span></li><li><a class='rsswidget' href='http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNE0HO5dUe_sGpmYKLd_b4nmQYJMqA&amp;url=http://www.dichtbij.nl/groot-alkmaar/sport/artikel/2434193/kom-ook-op-het-ijs.aspx' title='Kom ook op het ijsDichtbij.nlGEMEENTE - Afgelopen winter ook zo genoten van natuurijs? En zin de schaatsen weer onder te binden? Wordt dan lid van de Schaatstrainingsgroep Bergen. Aan kinderen vanaf 6 jaar wordt op een speelse wijze geleerd hoe om te gaan met de gladde ... [&hellip;]'>Kom ook op het ijs - Dichtbij.nl</a> <span class="rss-date">27 september 2012</span></li><li><a class='rsswidget' href='http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNGLTgrM5oOLskzEWMypE-bEtxjYkg&amp;url=http://www.skatingonline.nl/extreem-strenge-winter-voorspeld' title='SkatingOnline.nlExtreem strenge winter voorspeld | 20-09-2012SkatingOnline.nlAl vier jaar achtereen worden er Nederlandse kampioenschappen op natuurijs verreden en ook hebben de marathonmannen heel wat klassiekers mogen rijden. De schaatsers hopen natuurlijk op De Tocht der Tochten, De Elfstedentocht. Of dat er in zit kan ... [&hellip;]'>Extreem strenge winter voorspeld | 20-09-2012 - SkatingOnline.nl</a> <span class="rss-date">20 september 2012</span></li><li><a class='rsswidget' href='http://news.google.com/news/url?sa=t&amp;fd=R&amp;usg=AFQjCNFK62vcxyg9I8vq-vI1rJx0TpShJg&amp;url=http://www.dichtbij.nl/haarlemmermeer/sport/artikel/2430989/jeugdschaatsen-start-met-vallen-en-opstaan.aspx' title='Jeugdschaatsen Start! “met vallen en opstaan”.Dichtbij.nlnatuurijs. Massaal werden de schaatsen onder gebonden. Eerst nog wat onwennig, maar al snel ging het tempo van de schaatsbeweging omhoog, gevolgd door beide armen op de rug. Zoals je dat vroeger hebt geleerd van je ouders of met schoolschaatsen.and more » [&hellip;]'>Jeugdschaatsen Start! “met vallen en opstaan”. - Dichtbij.nl</a> <span class="rss-date">19 september 2012</span></li></ul></li><!-- widget_rss --><li id="rss-4" class="widget widget_rss"><h4 class="widgettitle"><a class='rsswidget' href='http://www.knsb.nl/natuurijs/overzicht/wedstrijden/feed' title='Syndicate deze inhoud (RSS)'><img style='border:0' width='14' height='14' src='http://www.ekkel.com/wp-includes/images/rss.png' alt='RSS' /></a> <a class='rsswidget' href='http://knsb.nl' title=''>Natuurijs Wedstrijden (KNSB)</a></h4><ul><li>Er is een fout opgetreden. De feed is waarschijnlijk uit de lucht. Probeer later opnieuw.</li></ul></li>		<!-- widget_recent_entries --><li id="recent-posts-2" class="widget widget_recent_entries">		<h4 class="widgettitle">Recente blog berichten</h4>		<ul>
+				<li><a href="http://www.ekkel.com/?p=280" title="Vandaag 29-1-2011 vlakbij Naarden &#8211; op 3cm ijs !!">Vandaag 29-1-2011 vlakbij Naarden &#8211; op 3cm ijs !!</a></li>
+				<li><a href="http://www.ekkel.com/?p=255" title="Filmpje van de Gouwzwee">Filmpje van de Gouwzwee</a></li>
+				<li><a href="http://www.ekkel.com/?p=231" title="Nieuw: aparte kaart met ijsdiktes Elfstedentocht route!">Nieuw: aparte kaart met ijsdiktes Elfstedentocht route!</a></li>
+				<li><a href="http://www.ekkel.com/?p=185" title="Eerste schaatstocht op natuurijs seizoen 2010-2011?">Eerste schaatstocht op natuurijs seizoen 2010-2011?</a></li>
+				<li><a href="http://www.ekkel.com/?p=170" title="Natuurijsbanen hebben een eigen kaart">Natuurijsbanen hebben een eigen kaart</a></li>
+				</ul>
+		</li>
+			</ul>
+
+			
+
+		</div> <!-- id="bottom-widebar" -->
+
+	 
+
+	</div> <!-- id="sidebar-wrapper" -->
+
+	
+
+	<div class="clearFloat"></div>
+
+
+
+
+<!--
+
+End of sidebar.php
+
+~~~ -->
+
+		
+
+
+</div> <!-- id="page-body-wrapper" -->
+
+	
+
+
+
+
+<!--
+
+footer.php
+
+~~~~~~~~~~~~~~~~~~~~~~~~ ~~~ -->
+
+<div class="clearFloat"></div>
+
+
+
+
+
+<!-- 
+
+Footers Left and Right
+
+~~~ -->
+
+	<div id="footer">
+
+		<div id="footer-content">
+
+			<div id="footer-content-left">	
+
+				
+			</div> <!-- id="footer-content-left" -->
+
+			<div id="footer-content-right">	
+
+				
+			</div> <!-- id="footer-content-right" -->
+
+		</div> <!-- "footer-content" -->
+
+	</div> <!-- id="footer" -->
+
+	
+
+	<div class="clearFloat"></div>
+
+      
+
+<!-- 
+
+Sub Footers Left and Right
+
+~~~ -->  
+
+	<div id="sub-footer">
+
+		<div id="sub-footer-content">
+
+			<div id="sub-footer-content-left">	
+
+				<p>info@ekkel.com</p>
+			</div> <!-- id="sub-footer-content-left" -->
+
+			<div id="sub-footer-content-right">	
+
+				<p>(c) Erik Ekkel</p>
+			</div> <!-- id="sub-footer-content-right" -->
+
+		</div> <!-- id="sub-footer-content" -->  
+
+	</div> <!-- id="sub-footer" -->
+
+	
+
+	<div class="clearFloat"></div>
+
+
+
+</div> <!-- id="sub-footer" -->
+
+
+
+		
+
+<!-- 
+
+Google Analytics
+
+~~~ -->	
+
+	<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3577459-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+	
+	<!-- Number of Queries:44   Seconds: 0.308-->
+
+	
+
+</body>
+
+
+
+</html>
+
+
+
+<!--
+
+End of footer.php
+
+~~~ -->
+
+
+	
+
+
+
+	
+
+<!--
+
+End of page.php 
+
+~~~ -->

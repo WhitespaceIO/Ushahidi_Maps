@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Crowdmap is a tool that allows you to crowdsource information and visualize it on a map and timeline" />
+<meta name="keywords" content="online maps, create a map, map maker, humanitarian map, crisis map, aid map, arab map, french map, english map, korean map, welsch map, japanese map" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script><title>Crowdmap | Create and Share Interactive Maps Online</title>
+<link rel="stylesheet" type="text/css" href="https://c683652.ssl.cf2.rackcdn.com/media/mhi/css/reset.css" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="https://c683652.ssl.cf2.rackcdn.com/media/mhi/css/reset.ie.css" />
+
+<![endif]--><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+<link rel="stylesheet" type="text/css" href="https://c683652.ssl.cf2.rackcdn.com/media/mhi/css/base.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jquery.validate/1.6/jquery.validate.min.js"></script>
+<script type="text/javascript" src="https://c683652.ssl.cf2.rackcdn.com/media/mhi/js/jquery.cycle.min.js"></script>
+<script type="text/javascript" src="https://c683652.ssl.cf2.rackcdn.com/media/mhi/js/jquery.colorbox.min.js"></script>
+<script type="text/javascript" src="https://c683652.ssl.cf2.rackcdn.com/media/mhi/js/jquery.tagcloud.js"></script>
+<script type="text/javascript" src="https://c683652.ssl.cf2.rackcdn.com/media/mhi/js/initialize.js"></script>
+
+
+<script type="text/javascript" language="javascript">
+
+
+$(function(){
+    $('#btn_sign-in').toggle(function(){
+        //show the dagum form
+        $("#login-form").show()
+        //add the active class to sign-in link
+        $(this).addClass("active")
+    }, function(){
+        //hide the dagum form
+        $("#login-form").hide()
+        //remove the active class from the sign-in link
+        $(this).removeClass("active")
+    });
+});
+	$(function() {
+
+		$(".expand_deployment_search").click(function() {
+			expand_window();
+		});
+
+		$(".search_submit").click(function() {
+
+			var search_val = $("#search_val").val();
+
+			if(search_val == undefined)
+			{
+				// Not searching for anything...
+			}
+			else
+			{
+				// Normal search
+				deployment_search('0','4',search_val);
+			}
+			return false;
+		});
+	});
+
+	function expand_window() {
+		$(".expand_deployment_search").fadeOut('fast',function() {
+			$("#deployment_search_box").animate({height: '740px'}, 1000, "linear",function() {
+				$("#deployment_search_box").css('overflow-y','scroll');
+			});
+		});
+	}
+
+	$(document).ready(function() {
+		// After the page loads, put the top deployments in the box.
+		deployment_search('0','4','');
+
+		// Also add a few of the top deployments without descriptions but with
+		//   screenshots at the bottom of the window
+		small_img_deployment_search('0','20','');
+	});
+
+	function small_img_deployment_search(limit,offset,search_val){
+		$.getJSON('https://crowdmap.com/mhi_extras/search.php', {'q' : search_val, 'limit' : limit+','+offset, 'no_description' : 1, 'image_size' : 50}, function(data){
+
+			$("#deployment_search_result_small_img").html('');
+
+			var img = '';
+
+			$.each(data, function(key,val){
+
+				img = '';
+				if(val.ss1_t !== '' && val.ss1_t !== 'null' && val.ss1_t !== null) {
+					img = '<a href="'+val.url+'"><img src="'+val.ss1_t+'" style="float:left;padding:10px;width:50px;height:50px;" /></a>';
+				}
+				$("#deployment_search_result_small_img").append(img);
+
+			});
+
+		});
+	}
+
+	function deployment_search(limit,offset,search_val){
+
+		$.getJSON('https://crowdmap.com/mhi_extras/search.php', {'q' : search_val, 'limit' : limit+','+offset, 'has_description' : 1}, function(data){
+
+			$("#deployment_search_result").html('');
+
+			var img = '';
+			var desc = '';
+			var i = 0;
+
+			$.each(data, function(key,val){
+
+				img = '';
+				if(val.ss1_t !== '' && val.ss1_t !== 'null' && val.ss1_t !== null) {
+					img = '<a href="'+val.url+'"><img src="'+val.ss1_t+'" style="float:left;margin-right:10px;width:75px;height:75px;" /></a>';
+				}
+
+				desc = '';
+				if(val.description !== '' && val.description !== 'null' && val.description !== null) {
+					desc = '<div style="font-size:12px;line-height:15px;">'+val.description+'</div>';
+				}
+
+				$("#deployment_search_result").append('<div style="margin-top:20px;"><a href="'+val.url+'" style="display:block;clear:both;">'+val.name+'</a></div>');
+
+				$("#deployment_search_result").append(''+img+''+desc+'');
+
+				$("#deployment_search_result").append('<div style="font-size:10px;color:#5C5C5C;">Go to <a href="'+val.url+'">'+val.name+'</a>.');
+
+				$("#deployment_search_result").append('<div style="clear:both;"></div>');
+
+				i++;
+
+			});
+
+
+			// Check if we need to show the back button
+			var back = '';
+			if(limit > 0){
+				back = '<span><a onclick="javascript:deployment_search('+(parseInt(limit)-parseInt(offset))+','+parseInt(offset)+',\''+search_val+'\')" style="cursor:pointer">Back</a></span>';
+			}else{
+				back = '<span style="color:#CCC;">Back</span>';
+			}
+
+			// Good chance we need to allow forward pagination
+			var forward = '';
+			if(i >= offset){
+				forward = '<span><a onclick="javascript:deployment_search('+(parseInt(limit)+parseInt(offset))+','+parseInt(offset)+',\''+search_val+'\')" style="cursor:pointer">Forward</a></span>';
+			}else{
+				forward = '<span style="color:#CCC;">Forward</span>';
+			}
+
+			// Show pagination links
+			$("#deployment_search_result").append('<div style="float:left;margin:15px 0px 15px 150px;">'+back+'</div><div style="float:right;margin:15px 150px 15px 0px;">'+forward+'</div><div style="clear:both;"></div>');
+
+			if(i == 0){
+				$("#deployment_search_result").html('Sorry, we couldn\'t find any public deployments with your search terms.');
+			}
+
+		});
+
+	}
+
+	function show_video(){
+
+		// Make the window big so we don't have to scroll
+		expand_window();
+
+		$("#show_video").html('<a onclick="javascript:hide_video();" style="float:right;margin-right:45px;cursor:pointer;font-size:10px;">Close Video</a><br/><iframe width="425" height="296" src="https://www.youtube.com/embed/aCDO5DyNt0Q/?autoplay=1" frameborder="0" allowfullscreen></iframe><br/><a onclick="javascript:hide_video();" style="float:right;margin-right:45px;cursor:pointer;font-size:10px;">Close Video</a><div style="clear:both;"></div>');
+	}
+
+	function hide_video(){
+		$("#show_video").html('');
+	}
+
+</script>
+
+</head>
+
+<body class="crowdmap-home content">
+
+	<div id="page-wrap">
+        <div id="header">
+            <h1><a href="https://crowdmap.com/mhi/">Crowdmap</a></h1>
+
+            <ul class="primary-nav">
+            	<li><a href="https://crowdmap.com/mhi"  class="active">Home</a></li><li><a href="https://crowdmap.com/mhi/page/2" >FAQ</a></li><li><a href="https://crowdmap.com/mhi/page/3" >Features</a></li><li><a href="https://crowdmap.com/mhi/page/4" >About</a></li><li><a href="https://crowdmap.com/mhi/contact" >Contact Us</a></li>            </ul>
+
+                        <div id="login-box">
+                <p>Have an account?<a class="sign-in rounded" href="#">Sign In </a></p>
+            </div>
+            
+            <div id="login-form" class="rounded shadow">
+                <form action="https://crowdmap.com/mhi/" method="post" id="frm-MHI-Login" name="frm-Login">
+<input type="hidden" name="form_auth_token" value="563dea20ca43090457f72ed12a099e89a040a4d142d2630874c2b740581eab39"  />
+
+                    <p>
+                        <label for="username">Email</label>
+                        <input type="text" name="username" class="text rounded" id="username" title="username" value="" />
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" class="text rounded" id="password" title="password" value="" />
+                                            </p>
+                    <p>
+                        <input class="btn_sign-in rounded" type="submit" value="Sign In" />
+                    </p>
+                    <p class="forgot-password">
+                        <a href="https://crowdmap.com/mhi/reset_password">Reset Password</a><br/>
+                        <a href="https://crowdmap.com/mhi/signup">Create Account</a>
+                    </p>
+                </form>
+            </div>
+        </div>		<div id="primary-content">
+            <div class="twocol-left">
+                <h2 class="title-lead-in">Crowdmap allows you to...</h2>
+                <ul class="elevator-list">
+                	<li class="s01">Collect information from cell phones, news and the web.</li>
+                    <li class="s02">Aggregate that information into a single platform.</li>
+					<li class="s03">Visualize it on a map and timeline.</li>
+                </ul>
+                <table class="tbl-sign-up">
+                	<tr>
+                    	<td class="meta-text">Nothing to install,<br />minimal configuration.</td>
+                        <td class="sign-up-box"><a href="https://crowdmap.com/mhi/signup" class="button btn_sign-up">Sign Up Now!</a></td>
+                    </tr>
+                </table>
+            </div>
+
+    		<div class="twocol-right" style="position:absolute;z-index:1000;float:right;margin-left:470px;">
+    			<div id="deployment_search_box" style="border:1px solid #C3C3C3;background-color:#F4F4F4;width:480px;height:360px;overflow-x:hidden;overflow-y:scroll;padding-left:28px;padding-top:17px;">
+
+    				<h3>Search for Existing Maps</h3>
+
+    				<script type="text/javascript">
+
+
+					</script>
+
+					<form method="post" name="search_form" id="search_form">
+
+						<label for="search_val">Search by keyword:</label>
+						<br/>
+						<input type="text" name="search_val" id="search_val" value="" />
+
+						<input type="submit" value="Search" class="search_submit"/>
+
+						<span style="float:right;font-size:10px;line-height:12px;text-align:center;margin-right:15px;"><a onclick="show_video();" style="cursor:pointer">Want to make your<br/>map searchable?</a></span>
+
+					</form>
+
+					<div id="show_video"></div>
+
+    				<div id="deployment_search_result">
+    					Search for maps by keyword above.
+    				</div>
+
+    				<h3>More Popular Maps</h3>
+    				<div id="deployment_search_result_small_img">...</div>
+
+    				<div style="clear:both;"></div>
+
+    				<div style="margin-bottom:15px">&nbsp;</div>
+
+    			</div>
+
+    			<a class="expand_deployment_search" style="width:508px;text-align:center;display:block;background-color:#F2F1E6;border:1px solid #C3C3C3;border-top:none;">Expand Window</a>
+
+    		</div>
+            <div style="clear:both;"></div>
+        </div>
+        <!-- END primary-content -->
+
+        <div id="secondary-content" style="z-index:500;">
+        	<div class="twocol-left">
+            	<h3>What Exactly Is Crowdmap?</h3>
+                <p style="font-style:italic"><img src="https://c683652.ssl.cf2.rackcdn.com/media/mhi/img/powered-by-ushahidi.png" style="float:left; margin:0 14px 10px 0;" />Crowdmap is designed and built by the people behind Ushahidi, a platform that was originally built to crowdsource crisis information. As the platform has evolved, so have  its uses. Crowdmap allows you to set up your own map of Ushahidi without having to install it on your own web server.
+                </p>
+            </div>
+            <div class="twocol-right">
+            	<h3>What Can I Do With Crowdmap?</h3>
+                <ul class="what-you-can-do" >
+                	<li class="monitor">
+                    	<strong>Monitor Elections</strong>
+                        Use the power of the crowd to monitor and visualize what went right, and what went wrong, in an election.
+                    </li>
+                    <li class="map">
+                    	<strong>Map Crisis Information</strong>
+                        Whether it's a natural disaster, epidemic or political crisis, Crowdmap was built for it.
+                    </li>
+                    <li class="curate">
+                    	<strong>Curate Local Resources</strong>
+                        Crowdsourcing isn't just for emergencies, you can use it for local knowledge and business too.
+                    </li>
+                    <li class="document">
+                    	<strong>Document A Zombie Invasion</strong>
+                        How else will you survive the coming apocalypse?
+                    </li>
+                </ul>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+        <!-- END secondary-content -->			<div id="footer">
+        	<div class="footer-block">
+                <ul>
+                    <li class="first"><a href="https://crowdmap.com/mhi/">HOME</a></li>
+                    <li><a href="https://crowdmap.com/mhi/page/3">FEATURES</a></li>
+                    <li><a href="https://crowdmap.com/mhi/page/4">ABOUT</a></li>
+                    <li><a href="https://crowdmap.com/mhi/contact">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="footer-block fb_middle"><p>&nbsp;</p></div>
+            <div class="footer-block">
+                <ul>
+                    <li class="first"><a href="http://www.facebook.com/group.php?gid=15142446117">Facebook</a></li>
+                    <li><a href="http://www.twitter.com/crowdmap">Twitter</a></li>
+                    <li><a href="#">Copyright &copy; 2012 Ushahidi, Inc</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-block fb_middle"><p>&nbsp;</p></div>
+
+            <div class="footer-block">
+                <ul>
+                    <li class="first"><a href="https://crowdmap.com/mhi/legal">TOS</a></li>
+					<li><a href="https://crowdmap.com/mhi/legal/dmca">DMCA</a></li>
+					<li><a href="https://crowdmap.com/mhi/legal/privacy">Privacy Notice</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+
+    <script type="text/javascript">
+	setTimeout(function() {
+		var statsCollector = document.createElement('img');
+		    statsCollector.src = document.location.protocol + "//tracker.ushahidi.com/piwik/piwik.php?idsite=1435&rec=1";
+		    statsCollector.style.cssText = "width: 1px; height: 1px; opacity: 0.1;";
+		document.body.appendChild(statsCollector);
+	}, 100);
+</script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-12063676-19']);
+      _gaq.push(['_setDomainName', 'crowdmap.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+    
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4f5f21e2613f5d7f7e0000ff');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+<script type="text/javascript">
+var _sf_async_config={uid:34186,domain:"crowdmap.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+       "js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script>
+    <!-- Scheduler --><script type="text/javascript">$(document).ready(function(){$('#schedulerlove').html('<img src="https://tracker.ushahidi.com/list/scheduler.php" />');});</script><div id="schedulerlove"></div><!-- End Scheduler -->
+
+<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://d1ros97qkrwjf5.cloudfront.net/42/eum/rum.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrf2","beacon-1.newrelic.com","38e9eb7a5f",492498,"Z1IBMUtYWkQEAEdYXF4YNhdQFl1ZAQZLH0NYRw==",0,220,new Date().getTime()]);</script>
+</body>
+</html>
+

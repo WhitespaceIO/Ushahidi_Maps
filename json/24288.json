@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="https://c683652.ssl.cf2.rackcdn.com/media/css/jquery-ui-themeroller.css" />
+<link rel="stylesheet" type="text/css" href="https://c683652.ssl.cf2.rackcdn.com/media/css/login.css" />
+<link rel="stylesheet" type="text/css" href="https://c683652.ssl.cf2.rackcdn.com/media/css/openid.css" />
+<link rel="stylesheet" type="text/css" href="https://c683652.ssl.cf2.rackcdn.com/media/css/global.css" />
+<script type="text/javascript" src="https://c683652.ssl.cf2.rackcdn.com/media/js/jquery.js"></script>
+<script type="text/javascript" src="https://c683652.ssl.cf2.rackcdn.com/media/js/openid/openid-jquery.js"></script>
+<script type="text/javascript" src="https://c683652.ssl.cf2.rackcdn.com/media/js/openid/openid-jquery-en.js"></script>
+<script type="text/javascript" src="https://c683652.ssl.cf2.rackcdn.com/media/js/global.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+    openid.init('openid_identifier');
+    openid.setDemoMode(false);
+	$("#signin_userpass").show(0);
+		$(".new_email").focusout(function() {
+
+		$.getJSON('/riverid/registered', {email: $(".new_email").val()}, function(response) {
+			if (response.response) {
+				$("#signin_userpass").show(0);
+				$("#username").val($(".new_email").val());
+				$('.new_name').attr('disabled', true);
+				$('.new_password').attr('disabled', true);
+				$('.new_password_again').attr('disabled', true);
+				$('.new_submit').attr('disabled', true);
+				$('.riverid_email_already_set_copy').html('<small>You already have an account managed by CrowdmapID! Try using your CrowdmapID email and password to login.</small>');
+				$(".riverid_email_already_set").show(0);
+			}else{
+				$("#username").val('');
+				$('.new_name').attr('disabled', false);
+				$('.new_password').attr('disabled', false);
+				$('.new_password_again').attr('disabled', false);
+				$('.new_submit').attr('disabled', false);
+				$(".riverid_email_already_set").hide(0);
+			}
+		});
+
+	});
+	});
+function toggle(thisDiv) {
+	$("#"+thisDiv).toggle(400);
+}
+function facebook_click() {
+	top.location.href = "https://landscape.crowdmap.com/login/facebook"
+}
+</script>
+</head>
+
+<body>
+
+<header>
+	<hgroup>
+		<ul id="header_nav_left">
+
+			<li><span class="bignext">&raquo;</span><a href="https://landscape.crowdmap.com/">Landscape</a></li>
+			
+		</ul>
+	</hgroup>
+
+	
+	<nav>
+		<ul id="header_nav_right">
+			<li class="header_nav_user header_nav_has_dropdown">
+			
+				<a href="https://landscape.crowdmap.com/login" style="float:right;padding-top:8px;"><span class="header_nav_label"><strong>Login</strong></span></a>
+
+				<ul class="header_nav_dropdown" style="display:none;">
+
+					<form action="https://landscape.crowdmap.com/login" method="post" id="userpass_form">
+<input type="hidden" name="form_auth_token" value="55af5a21562a906118d6570e14cf44ebb6cc9a8daa5a3e30f636012030cd7772"  />
+
+					<input type="hidden" name="action" value="signin">
+
+					<li><label for="username">Email</label><input type="text" name="username" id="username" class="login_text" /></li>
+
+					<li><label for="password">Password</label><input name="password" type="password" class="login_text" id="password" size="20" /></li>
+
+					<li><input type="submit" id="submit" name="submit" value="Login" class="header_nav_login_btn" /></li>
+					</form>
+
+					<li><hr/></li>
+
+					<li><a href="https://landscape.crowdmap.com/login/?newaccount">Create an Account</a></li>
+
+					<li><a href="#" id="header_nav_forgot" onclick="return false">Dimenticato la password?</a>
+
+						<form action="https://landscape.crowdmap.com/login" method="post" id="header_nav_userforgot_form">
+<input type="hidden" name="form_auth_token" value="55af5a21562a906118d6570e14cf44ebb6cc9a8daa5a3e30f636012030cd7772"  />
+
+						<input type="hidden" name="action" value="forgot">
+
+						<label for="resetemail">Registered Email</label>
+						<input type="text" id="resetemail" name="resetemail" value="" />
+
+						<input type="submit" id="submit" name="submit" value="Resetta la password" class="header_nav_login_btn" />
+
+						<br/>
+
+						</form>
+
+					</li>
+
+				</ul>
+
+						</li>
+		</ul>
+	</nav>
+</header>
+<div id="openid_login_container">
+
+	<div id="ushahidi_site_name" class="ui-corner-all">
+    	<div id="logo">
+			<h1>Landscape</h1>
+			<span>spatial analyst</span>
+		</div>
+    </div>
+
+    
+	
+	
+	<div id="openid_login" class="ui-corner-all">
+
+		
+		<h2>Login with:</h2>
+
+		<h2><a href="javascript:toggle('signin_userpass');">Email and Password</a></h2>
+		<div id="signin_userpass" class="signin_select ui-corner-all">
+			<form action="https://landscape.crowdmap.com/login" method="post" id="userpass_form">
+<input type="hidden" name="form_auth_token" value="55af5a21562a906118d6570e14cf44ebb6cc9a8daa5a3e30f636012030cd7772"  />
+
+				<input type="hidden" name="action" value="signin">
+				<table width="100%" border="0" cellspacing="3" cellpadding="4" background="" id="ushahidi_loginbox">
+					<tr>
+						<td><strong>Email:</strong><br />
+						<input type="text" name="username" id="username" class="login_text" /></td>
+					</tr>
+					<tr>
+						<td><strong>Password:</strong><br />
+						<input name="password" type="password" class="login_text" id="password" size="20" /></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" id="remember" name="remember" value="1" checked="checked" />Mantieni aperta la connessione su questo pc?</td>
+					</tr>
+					<tr>
+						<td><input type="submit" id="submit" name="submit" value="Login" class="login_btn" /></td>
+					</tr>
+					
+					
+				</table>
+			</form>
+		</div>
+		
+		
+			</div>
+
+	<div id="create_account" class="ui-corner-all">
+
+		<h2><a href="javascript:toggle('signin_new');">Create an Account</a></h2>
+
+		Create an account now to take advantage of more features on the site.		<div id="signin_new" class="signin_select ui-corner-all" style="margin-top:10px;">
+			<form action="https://landscape.crowdmap.com/login" method="post" id="usernew_form">
+<input type="hidden" name="form_auth_token" value="55af5a21562a906118d6570e14cf44ebb6cc9a8daa5a3e30f636012030cd7772"  />
+
+				<input type="hidden" name="action" value="new">
+				<table width="100%" border="0" cellspacing="3" cellpadding="4" background="" id="ushahidi_loginbox">
+					<tr>
+						<td><strong>Nome:</strong><br/><small>Used to identify you on the site to other users.</small><br />
+						<input type="text" id="name" name="name" value="" class="login_text new_name" /></td>
+					</tr>
+					<tr>
+						<td><strong>Email:</strong><br />
+						<input type="text" id="email" name="email" value="" class="login_text new_email" /></td>
+					</tr>
+					<tr class="riverid_email_already_set" style="display:none;">
+						<td class="riverid_email_already_set_copy"></td>
+					</tr>
+					<tr>
+						<td><strong>Password:</strong><br />
+						<input type="password" id="password" name="password" value="" class="login_text new_password" /></td>
+					</tr>
+					<tr>
+						<td><strong>Ridigita la password:</strong><br />
+						<input type="password" id="password_again" name="password_again" value="" class="login_text new_password_again" /></td>
+					</tr>
+					<tr>
+						<td><input type="submit" id="submit" name="submit" value="Sign Up" class="login_btn new_submit" /></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+	</div>
+
+		<div style="text-align:center;margin-top:20px;" id="openid_login" class="ui-corner-all">
+		<small>Accounts managed by the CrowdmapID service. 
+			<a href="https://crowdmapid.com">Per saperne di più</a>
+		</small>
+	</div>
+	
+</div>
+<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://d1ros97qkrwjf5.cloudfront.net/42/eum/rum.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrf2","beacon-1.newrelic.com","38e9eb7a5f",492498,"Z1IBMUtYWkQEAEdYXF4YNhdQFl1ZAQZLH0NYRw==",0,69,new Date().getTime()]);</script>
+</body>
+</html>
